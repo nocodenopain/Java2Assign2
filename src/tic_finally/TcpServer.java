@@ -29,7 +29,7 @@ public class TcpServer extends Application {
 			System.out.println("服务器监听34567端口。。。。");
 			int cnt = 1;
 			while(true){
-				Socket accept = socket.accept();
+	Socket accept = socket.accept();
 				cnt++;
 				ServerThread st = new ServerThread(accept, cnt);
 				st.start();
